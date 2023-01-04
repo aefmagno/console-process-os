@@ -4,7 +4,7 @@ import os from 'node:os'
 console.time()
 
 if (os.type() !== 'Darwin') {
-  console.error('Invalid OS Type.')
+  console.error(`Invalid OS Type.\nRequired OS Type: Darwin.\nCurrent OS Type: ${os.type}.`)
   process.exit(1)
 }
 
